@@ -33,6 +33,8 @@ h2{font-size:24px;font-weight:700;font-stretch:85%}
 .mono{font-family:var(--mono);font-size:13px}
 a{color:var(--accent)}
 header{display:grid;gap:14px}
+.source{margin:0;font-size:15px;color:var(--muted);max-width:65ch}
+.source a{font-weight:600}
 .runbar{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .runbar button{font:500 13px var(--mono);padding:6px 12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);border-radius:4px;cursor:pointer}
 .runbar button[aria-pressed="true"]{border-color:var(--accent);color:var(--accent);box-shadow:inset 0 -2px 0 var(--accent)}
@@ -96,6 +98,7 @@ footer{color:var(--muted);font-size:13px}
   <header>
     <div class="eyebrow">Managed.com PMO · Phase 1A Pilot Validation · MS Project replacement UAT</div>
     <h1>NEXUS UAT evidence</h1>
+    <p class="source">The 30 test cases come from the <a href="https://docs.google.com/document/d/1lBnOrDALB-9JetbTeoZLN8fXSWyVLoAZ9gykd16UCn8/edit?usp=sharing" target="_blank" rel="noopener">NEXUS UAT requirements document</a>.</p>
     <div class="runbar" id="runbar" aria-label="Choose run"></div>
     <div class="meta" id="meta"></div>
   </header>
@@ -105,7 +108,7 @@ footer{color:var(--muted);font-size:13px}
     <div class="uchead"><h2>Gap log</h2><span class="eyebrow" id="gapcount"></span></div>
     <div class="gaps"><table><thead><tr><th>Gap</th><th>Severity</th><th>Type</th><th>Observed vs required</th><th>MS Project behaviour</th><th>Workaround</th><th>Target</th></tr></thead><tbody id="gapbody"></tbody></table></div>
   </section>
-  <footer>Every screenshot carries a header bar with the page URL, browser, capture time (Toronto) and size. Test cases, fixture and oracle dates live in the NEXUS UAT Framework workbook. Link to a test case with #tc-01-1, a gap with #gap-001.</footer>
+  <footer>Every screenshot carries a header bar with the page URL, browser, capture time (Toronto) and size. Test cases are derived from the <a href="https://docs.google.com/document/d/1lBnOrDALB-9JetbTeoZLN8fXSWyVLoAZ9gykd16UCn8/edit?usp=sharing" target="_blank" rel="noopener">NEXUS UAT requirements document</a>; they are tracked, with fixture and oracle dates, in the NEXUS UAT Framework workbook. Link to a test case with #tc-01-1, a gap with #gap-001.</footer>
 </div>
 <dialog id="lb"><button class="close" id="lbclose">Close</button><img id="lbimg" alt=""><p id="lbcap"></p></dialog>
 
